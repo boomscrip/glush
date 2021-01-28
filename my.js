@@ -6,5 +6,7 @@ window.onload = function() {
 }
 function restore() {
 
-  document.querySelectorAll(".t-tildalabel").remove();
+  // document.querySelectorAll("div.t-tildalabel").remove();
+
+  document.querySelectorAll(".t-tildalabel").forEach(e => e.parentNode.removeChild(e));
 }
