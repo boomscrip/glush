@@ -1,15 +1,38 @@
-// document.querySelector(".t-tildalabel").remove();
+
+
 //
-window.onload = function() {
-  // var xme = document.querySelector(".t-tildalabel").remove();
-    var xme = document.querySelector(".t-tildalabel");
-    xme.style.setProperty('display', 'none', 'important','important');
+// window.onload = setInterval(function() {
+//   // var xme = document.querySelector(".t-tildalabel").remove();
+//     var xme = document.querySelector(".t-tildalabel");
+//     xme.style.setProperty('display', 'none', 'important','important');
+//     document.querySelector(".t-tildalabel").remove();
+// stop();
+// },2500);
+//
+//
+// function stop() {
+//   clearInterval(interval);
+// }
 
-  restore();
+
+window.onload = function my() {
+
+var intervalID = setInterval(load_new_msg, 2000);
+
+function load_new_msg(){
+  var xme = document.querySelector(".t-tildalabel");
+  console.log(xme);
+  if(xme === null){
+    clearInterval(intervalID);
+    // console.log('удалил');
+  }else {
+    document.querySelector(".t-tildalabel").remove();
+    my();
+  }
+
+
 }
-function restore() {
 
-  // document.querySelectorAll("div.t-tildalabel").remove();
 
-  // document.querySelectorAll(".t-tildalabel").forEach(e => e.parentNode.removeChild(e));
+
 }
