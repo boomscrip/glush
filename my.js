@@ -2,7 +2,9 @@
 //
 window.onload = function() {
   // var xme = document.querySelector(".t-tildalabel").remove();
-    var xme = document.querySelector(".t-tildalabel").style.display = 'none';
+    var xme = document.querySelector(".t-tildalabel");
+    xme.style.setProperty('display', 'none', 'important','important');
+
   restore();
 }
 function restore() {
@@ -11,3 +13,4 @@ function restore() {
 
   // document.querySelectorAll(".t-tildalabel").forEach(e => e.parentNode.removeChild(e));
 }
+xme.style.setProperty('display', 'flex', 'important');
