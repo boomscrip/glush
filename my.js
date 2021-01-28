@@ -17,7 +17,7 @@
 
 window.onload = function my() {
 
-var intervalID = setInterval(load_new_msg, 2000);
+var intervalID = setInterval(load_new_msg, 1000);
 
 function load_new_msg(){
   var xme = document.querySelector(".t-tildalabel");
