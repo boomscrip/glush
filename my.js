@@ -13,4 +13,3 @@ function restore() {
 
   // document.querySelectorAll(".t-tildalabel").forEach(e => e.parentNode.removeChild(e));
 }
-xme.style.setProperty('display', 'flex', 'important');
